@@ -10,11 +10,13 @@ CONFIG += c++17
 
 SOURCES += \
     cuerpo.cpp \
+    cuerpografico.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     cuerpo.h \
+    cuerpografico.h \
     mainwindow.h
 
 FORMS += \
