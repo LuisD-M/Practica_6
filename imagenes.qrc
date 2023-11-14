@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>espaciof.jpg</file>
+        <file>Espacio.png</file>
+    </qresource>
+</RCC>
