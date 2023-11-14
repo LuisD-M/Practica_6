@@ -207,7 +207,7 @@
      <string>Vel Y</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Crear_planeta">
     <property name="geometry">
      <rect>
       <x>1030</x>
@@ -226,7 +226,7 @@
      <string>Crear planeta</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Simular">
     <property name="geometry">
      <rect>
       <x>1030</x>

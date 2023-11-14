@@ -20,6 +20,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_Crear_planeta_clicked();
+
+    void on_Simular_clicked();
+
 private:
     Ui::MainWindow *ui;
 

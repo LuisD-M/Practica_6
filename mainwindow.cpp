@@ -26,3 +26,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_Crear_planeta_clicked()
+{
+
+}
+
+
+void MainWindow::on_Simular_clicked()
+{
+
+}
+
