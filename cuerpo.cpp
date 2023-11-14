@@ -35,9 +35,18 @@ float cuerpo::getR() const
 
 void cuerpo::acelerar(float px2_, float py2_, float masa2)
 {
+    //float teta = atan((py2_ - PY)/(px2_ - PX));
+    //teta = teta*0.01745;
+
     radio = pow( (pow((px2_- PX),2 ) + pow( (py2_ - PY),2) ),1/2);      //aceleracion de un planeta con respecto a distancia
+
+    //AX = G*masa2(pow(radio,2) * sin(teta));
+    //AY = (G*masa2*sin(teta))/pow(radio,2);
+
     AX = G*masa2*(px2_-PX)/pow(radio,2);
     AY = G*masa2*(py2_-PY)/pow(radio,2);
+
+
 }
 
 void cuerpo::actualizar(float dt)

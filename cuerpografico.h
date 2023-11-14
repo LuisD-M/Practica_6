@@ -7,7 +7,7 @@
 #include <QGraphicsScene>
 #include "cuerpo.h"
 
-class cuerpografico : public QGraphicsItem
+class cuerpografico : public QObject, public QGraphicsItem
 {
     Q_OBJECT
 public:

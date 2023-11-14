@@ -7,8 +7,8 @@
 class cuerpo : public QObject
 {
     Q_OBJECT
-public:
 
+public:
     cuerpo(float px_, float py_, float vx_, float vy_, float masa_, float R_);   //Constructor para inicializar las variables
 
     float getPX() const;                                        //Metodos para obtener valores
