@@ -17,7 +17,9 @@ public:
     float getR() const;
 
     void acelerar(float px2_, float py2_, float masa2);                 // aceleración
-    void actualizar(float dt); // actualiza la posición y velocidad
+    void actualizar(float dt, float sumX, float sumY); // actualiza la posición y velocidad
+    float aceleX();
+    float aceleY();
 
 
 private:

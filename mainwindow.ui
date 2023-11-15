@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
@@ -35,6 +38,12 @@
       <width>113</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -58,6 +67,9 @@
     <property name="mouseTracking">
      <bool>false</bool>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Pos X</string>
     </property>
@@ -71,6 +83,12 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="Masa">
     <property name="geometry">
@@ -80,6 +98,12 @@
       <width>113</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
    <widget class="QLineEdit" name="Radio">
@@ -91,6 +115,12 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="Velocidadx">
     <property name="geometry">
@@ -101,6 +131,12 @@
       <height>24</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="Velocidady">
     <property name="geometry">
@@ -110,6 +146,12 @@
       <width>113</width>
       <height>24</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -126,6 +168,9 @@
       <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Pos Y</string>
@@ -146,6 +191,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Masa</string>
     </property>
@@ -164,6 +212,9 @@
       <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Radio</string>
@@ -184,6 +235,9 @@
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Vel X</string>
     </property>
@@ -202,6 +256,9 @@
       <pointsize>12</pointsize>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Vel Y</string>
@@ -243,6 +300,28 @@
     </property>
     <property name="text">
      <string>Simular</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>30</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string> SIMULACION DE PLANETAS </string>
     </property>
    </widget>
   </widget>

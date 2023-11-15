@@ -17,7 +17,7 @@ public:
 
     void paint(QPainter *painter,const QStyleOptionGraphicsItem *option, QWidget *widget); //  dibujar el cuerpo
     void setEscala(float s);                                               // establece la escala del cuerpo
-    void actualizar(float dt);                                             // actualizar el tiempo y posicion
+    void actualizar(float dt, float sumX, float sumY);                                             // actualizar el tiempo y posicion
 
     cuerpo* getEsf();                                                      // Puntero al cuerpo.
 

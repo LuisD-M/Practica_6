@@ -16,7 +16,7 @@ QRectF cuerpografico::boundingRect() const
 
 void cuerpografico::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setBrush(Qt::green);
+    painter->setBrush(Qt::blue);
     painter->drawEllipse(boundingRect());
 }
 
@@ -25,9 +25,9 @@ void cuerpografico::setEscala(float s)
     escala = s;
 }
 
-void cuerpografico::actualizar(float dt)
+void cuerpografico::actualizar(float dt, float sumX, float sumY)
 {
-    esf->actualizar(dt);                                                                // Actualiza el cuerpo en la escena
+    esf->actualizar(dt, sumX, sumY);                                                                // Actualiza el cuerpo en la escena
     setPos( esf->getPX()*escala, esf->getPY()*escala);                                  // asigna el cuerpo a la escena
 }
 

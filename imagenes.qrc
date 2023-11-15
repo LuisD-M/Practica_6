@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>espaciof.jpg</file>
         <file>Espacio.png</file>
+        <file>Fondoescena.jpg</file>
     </qresource>
 </RCC>

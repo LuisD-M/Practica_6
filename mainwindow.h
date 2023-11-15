@@ -45,6 +45,8 @@ private:
     float dt;
     int alto;
     int ancho;
+    float sumX;
+    float sumY;
     QList<cuerpografico*>cuerpos;
 };
 #endif // MAINWINDOW_H
