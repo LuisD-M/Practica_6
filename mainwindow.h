@@ -34,12 +34,14 @@ private slots:
     void on_Crear_planeta_clicked();
     void on_Simular_clicked();
     void actualizar();
+    void escribir();
 
 
 private:
     Ui::MainWindow *ui;
     QTimer *timer;
     QGraphicsScene *scene;
+    string Resultados;
 
     // almacenar las dimensiones de la escena gráfica.
     float dt;

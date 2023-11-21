@@ -11,7 +11,8 @@ cuerpo::cuerpo(float px_, float py_, float vx_, float vy_, float masa_, float R_
     R = R_;
     AX = 0;
     AY = 0;
-    G = 6.67384*(pow(10,-11));
+    //G = 6.67384*(pow(10,-11));
+    G=1;
     teta = 0;
     radio=0;
 
@@ -43,8 +44,8 @@ void cuerpo::acelerar(float px2_, float py2_, float masa2)
     float y = py2_ - PY;
     float x = px2_ - PX;
 
-    float divi = y/x;
-    teta = atan(divi);
+
+    teta = atan2(y,x);
 
     float co = cos(teta);
     float si = sin(teta);

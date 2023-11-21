@@ -5,9 +5,11 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    alto  = 975;      //457
-    ancho = 457;      //975
-    dt = 0.5;
+    alto  = 975;
+    ancho = 457;
+    dt = 1;
+
+    Resultados = "Resultados.txt";
 
     sumX=0;
     sumY=0;
@@ -80,12 +82,28 @@ void MainWindow::actualizar()
             }
         }
         cuerpos.at(i)->actualizar(dt, sumX, sumY);
-        if(i==0)
-            qDebug()<<"PosX"<<cuerpos.at(i)->getEsf()->getPX()<<'\t'<<"PosY"<<cuerpos.at(i)->getEsf()->getPY()<<" angulo: "<<cuerpos.at(i)->getEsf()->angulo()<<endl;
-
         sumX=0;
         sumY=0;
     }
+
+    escribir();
+}
+
+void MainWindow::escribir()
+{
+    ofstream archivo(Resultados, ios::app);
+
+    if (archivo.fail())
+        return;
+
+    for (int i = 0; i < cuerpos.size(); ++i){
+        archivo<<cuerpos.at(i)->getEsf()->getPX()<<" "<<cuerpos.at(i)->getEsf()->getPY()<<"   ";
+
+        if (i == cuerpos.size() - 1)  // Si el cuerpo es el ultimo se salta de linea
+            archivo<<'\n';
+    }
+    archivo.close();
+
 }
 
 
