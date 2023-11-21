@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->setupUi(this);
     alto  = 975;      //457
     ancho = 457;      //975
-    dt = 1;
+    dt = 0.5;
 
     sumX=0;
     sumY=0;
@@ -61,7 +61,7 @@ void MainWindow::on_Crear_planeta_clicked()
 
 void MainWindow::on_Simular_clicked()
 {
-    timer->start(50);
+    timer->start(dt);
 }
 
 void MainWindow::actualizar()
@@ -77,12 +77,11 @@ void MainWindow::actualizar()
 
                 sumX += cuerpos.at(i)->getEsf()->aceleX();
                 sumY += cuerpos.at(i)->getEsf()->aceleY();
-
             }
         }
         cuerpos.at(i)->actualizar(dt, sumX, sumY);
-        if(i==1)
-            qDebug()<<"PosX"<<cuerpos.at(i)->getEsf()->getPX()<<'\t'<<"PosY"<<cuerpos.at(i)->getEsf()->getPY()<<endl;
+        if(i==0)
+            qDebug()<<"PosX"<<cuerpos.at(i)->getEsf()->getPX()<<'\t'<<"PosY"<<cuerpos.at(i)->getEsf()->getPY()<<" angulo: "<<cuerpos.at(i)->getEsf()->angulo()<<endl;
 
         sumX=0;
         sumY=0;

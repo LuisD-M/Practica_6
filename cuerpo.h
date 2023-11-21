@@ -20,7 +20,7 @@ public:
     void actualizar(float dt, float sumX, float sumY); // actualiza la posición y velocidad
     float aceleX();
     float aceleY();
-
+    float angulo();
 
 private:
     float PX;                   // posición eje x
@@ -33,6 +33,7 @@ private:
     float AY;                   // aceleración eje y
     float G;                    // constante de gravedad.
     float R;                    // radio del planeta
+    float teta;
 
 };
 
